@@ -1,0 +1,51 @@
+////
+// Author: Andrew Ulm
+////
+
+// Color Variables
+$default-text: #777777;
+$header-bg: #ffffff;
+$header-border: #cccccc;
+$header-font: #ffffff;
+$content-bg: #ffffff;
+$content-border: #dddddd;
+$footer-bg: #666666;
+$special-teal: #4aaaa5;
+
+// Fonts
+$font-heading: 'Georgia', Times, Times New Roman, serif;
+$font-default: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+// Page Style
+
+body{
+  margin: 0;
+  padding: 0;
+  color: $default-text;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid $header-border;
+  height: 100px;
+
+  #nav-container {
+    display: flex;
+    flex-basis: 90%;
+
+    #logo {
+      display: flex;
+      flex-basis: 25%;
+      align-items: center;
+      justify-content: center;
+      background: $special-teal;
+      color: $header-font;
+      font-size: 2.0em;
+      font-family: $font-heading;
+      font-weight: 700;
+    }
+  }
+}
