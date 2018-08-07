@@ -187,7 +187,31 @@ form textarea {
     flex-basis: 31.3%;
     height: 283px;
     margin: 1%;
-    background: url("http://via.placeholder.com/283x283");
+}
+
+#portfolio-thumbnails .portfolio-hangman {
+    background: url("../images/portfolio-hangman.jpg") center center;
+    background-size: 50%;
+}
+#portfolio-thumbnails .portfolio-rpg {
+    background: url("../images/portfolio-rpg.jpg") center center;
+    background-size: 50%;
+}
+#portfolio-thumbnails .portfolio-trivia {
+    background: url("../images/portfolio-trivia.jpg") center center;
+    background-size: 50%;
+}
+#portfolio-thumbnails .portfolio-kuinfo {
+    background: url("../images/portfolio-kuinfo.png") center center;
+    background-size: 50%;
+}
+#portfolio-thumbnails .portfolio-rps {
+    background: url("../images/portfolio-rockpaperscissors.png") center center;
+    background-size: 50%;
+}
+#portfolio-thumbnails .portfolio-tbd {
+    background: url("../images/portfolio-tbd.jpg") center center;
+    background-size: 50%;
 }
 
 #portfolio-thumbnails div div {
@@ -200,4 +224,24 @@ form textarea {
     flex-basis: 100%;
     align-self: flex-end;
     justify-content: center;
+}
+
+#portfolio-thumbnails div div:hover {
+    animation-name: card-hover;
+    animation-duration: 2s;
+}
+
+@keyframes card-hover {
+    0% {
+        background: #4aaaa5;
+        margin: 0 0 20px 0;
+    }
+    50% {
+        background: #E89F0C;
+        margin: 0 0 50px 0;
+    }
+    100% {
+        background: #4aaaa5;
+        margin: 0 0 20px 0;
+    }
 }
