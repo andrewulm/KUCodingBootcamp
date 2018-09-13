@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NYT Search</title>
+
+    <!-- // Import Styles // -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- // Import Javascript // -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="scraper.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png"/>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-newspaper"></i> Search Parameters
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="_searchTerm">Search Term:</label>
+                    <input id="_searchTerm" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="_recordsRetrieve">Number of Records to Retrieve:</label>
+                    <input id="_recordsRetrieve" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="_startYear">Start Year: (optional)</label>
+                    <input id="_startYear" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="_endYear">End Year: (optional)</label>
+                    <input id="_endYear" type="text" class="form-control">
+                </div>
+
+                <button id="_submitButton" type="submit" class="btn btn-lg btn-success">Submit</button>
+                <button id="_resetButton" type="reset" class="btn btn-lg btn-danger">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-star"></i> Top Articles
+        </div>
+        <div id="_articlesBody" class="card-body"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-center">
+            Made with lots of <i class="far fa-heart"></i> by Joshua and Andrew
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
