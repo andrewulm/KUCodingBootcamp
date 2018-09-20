@@ -55,14 +55,15 @@ $(document).ready(function() {
         var empStart = childSnapshot.val().start;
         var empRate = childSnapshot.val().rate;
 
-        console.log(empName);
-        console.log(empRole);
-        console.log(empStart);
-        console.log(empRate);
+        console.log('Employee Name: ' + empName);
+        console.log('Employee Role: ' + empRole);
+        console.log('Employee Start: ' + empStart);
+        console.log('Employee Rare: ' + empRate);
 
-        var empStartDate = moment.unix(empStart).format("MM/DD/YYYY");
+        var empStartDate = empStart;
+        console.log('var empStartDate: ' + empStartDate);
 
-        var empMonths = moment().diff(moment.unix(empStart, "X"), "months");
+        var empMonths = moment().diff(moment(empStartDate), "months");
         console.log(empMonths);
 
         var empBilled = empMonths * empRate;
