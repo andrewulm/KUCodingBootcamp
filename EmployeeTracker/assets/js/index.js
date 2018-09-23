@@ -61,7 +61,7 @@ $(document).ready(function() {
         console.log('Employee Rare: ' + empRate);
 
         var empStartDate = empStart;
-        console.log('var empStartDate: ' + empStartDate);
+        console.log(empStartDate);
 
         var empMonths = moment().diff(moment(empStartDate), "months");
         console.log(empMonths);
